@@ -1,0 +1,27 @@
+=== HASIL EVALUASI TERHADAP LABEL MANUSIA ===
+Jumlah sample yang dievaluasi: 100 dari 100 berita
+
+Accuracy  : 0.3500
+Precision : 0.5138 (weighted)
+Recall    : 0.3500 (weighted)
+F1-score  : 0.3646 (weighted)
+
+Confusion Matrix (baris = label manual/manusia, kolom = prediksi model):
+           Negatif      Netral     Positif
+ Negatif        13           7           2
+  Netral        38          18           7
+ Positif         9           2           4
+
+Classification report per kelas:
+              precision    recall  f1-score   support
+
+     Negatif       0.22      0.59      0.32        22
+      Netral       0.67      0.29      0.40        63
+     Positif       0.31      0.27      0.29        15
+
+    accuracy                           0.35       100
+   macro avg       0.40      0.38      0.33       100
+weighted avg       0.51      0.35      0.36       100
+
+
+Catatan: ini akurasi model dibandingkan LABEL MANUSIA (sample_anotasi_manual.xlsx), bukan terhadap lexicon.
