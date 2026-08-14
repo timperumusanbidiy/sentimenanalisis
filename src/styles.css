@@ -1,0 +1,98 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-brand-50: var(--brand-50);
+  --color-brand-200: var(--brand-200);
+  --color-brand-400: var(--brand-400);
+  --color-brand-700: var(--brand-700);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-neutral: var(--neutral);
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.875rem;
+
+  /* Brand palette from user */
+  --brand-50: #eef5ff;
+  --brand-200: #b4d4ff;
+  --brand-400: #86b6f6;
+  --brand-700: #3674b5;
+
+  --background: #eef5ff;
+  --foreground: oklch(0.22 0.05 260);
+  --card: #ffffff;
+  --card-foreground: oklch(0.22 0.05 260);
+  --popover: #ffffff;
+  --popover-foreground: oklch(0.22 0.05 260);
+  --primary: #3674b5;
+  --primary-foreground: #ffffff;
+  --secondary: #b4d4ff;
+  --secondary-foreground: #123a67;
+  --muted: #eef5ff;
+  --muted-foreground: oklch(0.5 0.04 250);
+  --accent: #86b6f6;
+  --accent-foreground: #0f2c4e;
+  --destructive: oklch(0.62 0.22 25);
+  --destructive-foreground: #ffffff;
+  --border: #d7e6fb;
+  --input: #d7e6fb;
+  --ring: #86b6f6;
+
+  --chart-1: #3674b5;
+  --chart-2: #86b6f6;
+  --chart-3: #b4d4ff;
+  --chart-4: #1e4d80;
+  --chart-5: #5a97d8;
+
+  --positive: #2f9e6a;
+  --negative: #d64545;
+  --neutral: #86b6f6;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03";
+  }
+}
