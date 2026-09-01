@@ -387,10 +387,10 @@ function LandingPage() {
           {/* Copy */}
           <div className="text-center lg:text-left">
             <h1 className="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl xl:text-6xl">
-              Monitoring Berita dan Analisis Opini.
+              Monitoring Berita dan Analisis Opini
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-sm text-muted-foreground sm:text-base lg:mx-0">
-              Website ini dikembangkan oleh Bank Indonesia KPw DIY sebagai platform analisis
+              Website ini dikembangkan oleh TPID DIY bersama Bank Indonesia KPw DIY sebagai platform analisis
               sentimen berita berbasis machine learning. Hasil analisis yang disajikan bertujuan
               untuk menambah wawasan, mempermudah pemantauan isu, dan mendukung pengambilan
               keputusan berbasis data.
@@ -661,8 +661,7 @@ function LandingPage() {
       <footer className="text-center text-xs text-muted-foreground py-6">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-1 px-5 py-8 text-center text-xs text-muted-foreground">
           <span>
-            © {new Date().getFullYear()} · Kantor Perwakilan Bank Indonesia Daerah Istimewa
-            Yogyakarta
+            © {new Date().getFullYear()} · Daerah Istimewa Yogyakarta
           </span>
           <span>Developed by Fiki Vania Arun Fadila &amp; Ananda Auliya Rahma</span>
         </div>
