@@ -88,7 +88,7 @@ export const Route = createFileRoute("/dashboard")({
 });
 
 // Ganti ini kalau backend jalan di alamat/port lain.
-const API_BASE = "https://dashboardsentimen.up.railway.app";
+const API_BASE = "sentimenanalisis.up.railway.app";
 
 const BRAND = {
   p50: "#EEF5FF",
