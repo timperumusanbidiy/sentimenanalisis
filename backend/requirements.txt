@@ -79,4 +79,4 @@ fastapi
 trafilatura
 googlenewsdecoder
 wordcloud
-google-generativeai
+google-genai
