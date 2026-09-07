@@ -68,7 +68,7 @@ def _get_gemini_model():
 
     try:
         if _genai_module is None:
-            import google.generativeai as genai
+            from google import genai
             _genai_module = genai
 
         if not _gemini_configured:
