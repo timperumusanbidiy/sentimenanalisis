@@ -37,13 +37,6 @@ def get_news(year, month, keyword, limit=100):
     )
 
     feed = feedparser.parse(url)
-    print("QUERY:", query)
-    print("URL:", url)
-    print("STATUS:", getattr(feed, "status", None))
-    print("BOZO:", getattr(feed, "bozo", None))
-    print("ENTRIES:", len(feed.entries))
-    print("FEED TITLE:", feed.feed.get("title", ""))
-
 
     news = []
 
